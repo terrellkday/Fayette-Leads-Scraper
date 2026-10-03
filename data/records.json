@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-02T22:47:49.423087-04:00",
+  "fetched_at": "2026-10-02T22:56:30.948386-04:00",
   "source": "Fayette County GA Public Records",
   "date_range": {
     "start": "2026-09-02",
@@ -10,17 +10,17 @@
     "end": "2026-10-02"
   },
   "archive_range": {
-    "start": "",
-    "end": ""
+    "start": "2026-10-02",
+    "end": "2026-10-02"
   },
   "filed_range": {
-    "start": "",
-    "end": ""
+    "start": "2026-09-02",
+    "end": "2026-09-02"
   },
-  "new_this_run": 0,
-  "archive_total": 0,
+  "new_this_run": 1,
+  "archive_total": 1,
   "dashboard_days": 120,
-  "total": 0,
+  "total": 1,
   "with_address": 0,
   "sources_report": {
     "parcels": {
@@ -42,16 +42,10 @@
       "error": ""
     },
     "legal_notices": {
-      "ok": false,
-      "status": "failed",
-      "count": 0,
-      "error": "ran but found no records"
-    },
-    "legal_organ_pdfs": {
-      "ok": false,
-      "status": "skipped",
-      "count": 0,
-      "error": "not configured"
+      "ok": true,
+      "status": "ok",
+      "count": 7,
+      "error": ""
     },
     "tax_sales": {
       "ok": true,
@@ -66,5 +60,48 @@
       "error": ""
     }
   },
-  "records": []
+  "records": [
+    {
+      "doc_num": "GPN-811716ad05d427c1",
+      "doc_type": "Notice of Sale Under Power",
+      "filed": "2026-09-02",
+      "cat": "FC",
+      "cat_label": "Pre-Foreclosure",
+      "owner": "Erik Ausler",
+      "parcel_owner": "",
+      "name_order": "natural",
+      "grantee": "",
+      "amount": null,
+      "legal": "Fayette County News Wednesday, September 30, 2026 City: Fayetteville County: Fayette FORECLOSURES NOTICE OF SALE UNDER POWER STATE OF GEORGIA, COUNTY OF FAYETTE By virtue of a Power of Sale con- tained in that certain Security Deed from Erik Ausler to Mortgage Electronic Registration Sys- tems, Inc. as nominee for Mega Capital Funding Inc ... click 'view' to open the full text.",
+      "parcel_id": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "GA",
+      "prop_zip": "",
+      "pub_city": "Fayetteville",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "owner_occupied": null,
+      "clerk_url": "https://www.georgiapublicnotice.com/search.aspx",
+      "source": "Georgia Public Notice (legal organ advertisement)",
+      "foreclosure_sale_date": "",
+      "tax_sale_date": "",
+      "years_delinquent": "",
+      "heirs_unknown": false,
+      "notice_number": "811716ad05d427c1",
+      "status": "active",
+      "match_confidence": 0.0,
+      "match_method": "none",
+      "last_verified": "2026-10-03",
+      "flags": [
+        "Pre-foreclosure",
+        "New this week"
+      ],
+      "score": 65,
+      "county": "Fayette",
+      "first_seen": "2026-10-02"
+    }
+  ]
 }
