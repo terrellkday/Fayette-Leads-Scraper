@@ -3565,13 +3565,30 @@ def determine_owner_occupancy(rec: Dict[str, Any]) -> Optional[bool]:
 # DEDUPLICATION + PROPERTY CONSOLIDATION + RELEASE HANDLING
 # =============================================================================
 
+def _dedupe_key(rec: Dict[str, Any]) -> str:
+    """Identity of a notice document for dedupe and seen-state purposes.
+
+    The notice id alone can collide across DISTINCT ads when the results
+    page yields no per-ad code -- Fayette's snippets carry none, so seven
+    different notices hashed to one id and six real leads were silently
+    dropped. The borrower's name and property address join the key, so two
+    different borrowers never collapse into one document. Republications of
+    the SAME ad keep the same owner, so they still dedupe exactly as
+    designed (earliest filing date wins).
+    """
+    nid = (rec.get("_notice_dedupe")
+           or f"{rec.get('source', '')}|{rec.get('doc_num', '')}")
+    owner_sig = token_signature(rec.get("owner") or "")
+    addr_sig = address_key(rec.get("prop_address"), rec.get("prop_zip"))
+    return f"{nid}|{owner_sig}|{addr_sig}".strip().upper()
+
+
 def dedupe_records(records: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], int]:
     """Exact-document dedupe on source + doc_num (or the notice dedupe hash)."""
     seen: Dict[str, Dict[str, Any]] = {}
     dupes = 0
     for rec in records:
-        key = rec.get("_notice_dedupe") or f"{rec.get('source','')}|{rec.get('doc_num','')}"
-        key = key.strip().upper()
+        key = _dedupe_key(rec)
         if key in seen:
             dupes += 1
             prior = seen[key]
@@ -4360,7 +4377,7 @@ def load_seen() -> Dict[str, str]:
 def save_seen(records: List[Dict[str, Any]], prior: Dict[str, str]) -> None:
     today = today_et()
     for rec in records:
-        key = rec.get("_notice_dedupe") or f"{rec.get('source','')}|{rec.get('doc_num','')}"
+        key = _dedupe_key(rec)
         prior.setdefault(key, rec.get("filed") or today)
     # Trim anything older than a year so the state file cannot grow forever.
     cutoff = (now_et() - timedelta(days=365)).strftime("%Y-%m-%d")
@@ -4562,8 +4579,7 @@ async def run_all() -> int:
     prior_seen = load_seen()
 
     def _key(r: Dict[str, Any]) -> str:
-        return (r.get("_notice_dedupe")
-                or f"{r.get('source','')}|{r.get('doc_num','')}")
+        return _dedupe_key(r)
 
     fresh = list(all_records)
     if NEW_ONLY and prior_seen:
