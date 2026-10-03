@@ -1,0 +1,27 @@
+{
+  "fetched_at": null,
+  "source": "Fayette County GA Public Records",
+  "date_range": {
+    "start": null,
+    "end": null
+  },
+  "run_window": {
+    "start": null,
+    "end": null
+  },
+  "archive_range": {
+    "start": null,
+    "end": null
+  },
+  "filed_range": {
+    "start": null,
+    "end": null
+  },
+  "new_this_run": 0,
+  "archive_total": 0,
+  "dashboard_days": 120,
+  "total": 0,
+  "with_address": 0,
+  "sources_report": {},
+  "records": []
+}
