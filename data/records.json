@@ -1,27 +1,70 @@
 {
-  "fetched_at": null,
+  "fetched_at": "2026-10-02T22:47:49.423087-04:00",
   "source": "Fayette County GA Public Records",
   "date_range": {
-    "start": null,
-    "end": null
+    "start": "2026-09-02",
+    "end": "2026-10-02"
   },
   "run_window": {
-    "start": null,
-    "end": null
+    "start": "2026-09-02",
+    "end": "2026-10-02"
   },
   "archive_range": {
-    "start": null,
-    "end": null
+    "start": "",
+    "end": ""
   },
   "filed_range": {
-    "start": null,
-    "end": null
+    "start": "",
+    "end": ""
   },
   "new_this_run": 0,
   "archive_total": 0,
   "dashboard_days": 120,
   "total": 0,
   "with_address": 0,
-  "sources_report": {},
+  "sources_report": {
+    "parcels": {
+      "ok": false,
+      "status": "skipped",
+      "count": 0,
+      "error": "no parcel source"
+    },
+    "gsccca": {
+      "ok": false,
+      "status": "skipped",
+      "count": 0,
+      "error": "no premium account"
+    },
+    "browser": {
+      "ok": true,
+      "status": "ok",
+      "count": 0,
+      "error": ""
+    },
+    "legal_notices": {
+      "ok": false,
+      "status": "failed",
+      "count": 0,
+      "error": "ran but found no records"
+    },
+    "legal_organ_pdfs": {
+      "ok": false,
+      "status": "skipped",
+      "count": 0,
+      "error": "not configured"
+    },
+    "tax_sales": {
+      "ok": true,
+      "status": "ok",
+      "count": 0,
+      "error": "no active sales"
+    },
+    "qpublic": {
+      "ok": true,
+      "status": "ok",
+      "count": 0,
+      "error": ""
+    }
+  },
   "records": []
 }
