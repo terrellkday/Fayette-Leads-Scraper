@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-10-22T07:12:32.329896-04:00",
+  "fetched_at": "2026-10-23T07:11:30.223406-04:00",
   "source": "Fayette County GA Public Records",
   "date_range": {
-    "start": "2026-10-19",
-    "end": "2026-10-22"
+    "start": "2026-10-20",
+    "end": "2026-10-23"
   },
   "run_window": {
-    "start": "2026-10-19",
-    "end": "2026-10-22"
+    "start": "2026-10-20",
+    "end": "2026-10-23"
   },
   "archive_range": {
     "start": "2026-10-02",
@@ -94,7 +94,7 @@
       "status": "active",
       "match_confidence": 0.0,
       "match_method": "none",
-      "last_verified": "2026-10-22",
+      "last_verified": "2026-10-23",
       "flags": [
         "Pre-foreclosure",
         "New this week"
