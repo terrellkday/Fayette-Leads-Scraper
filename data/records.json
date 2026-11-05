@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-11-04T07:12:21.494308-05:00",
+  "fetched_at": "2026-11-05T07:11:00.321058-05:00",
   "source": "Fayette County GA Public Records",
   "date_range": {
-    "start": "2026-11-01",
-    "end": "2026-11-04"
+    "start": "2026-11-02",
+    "end": "2026-11-05"
   },
   "run_window": {
-    "start": "2026-11-01",
-    "end": "2026-11-04"
+    "start": "2026-11-02",
+    "end": "2026-11-05"
   },
   "archive_range": {
     "start": "2026-10-02",
