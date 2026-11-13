@@ -1,27 +1,27 @@
 {
-  "fetched_at": "2026-11-12T07:11:09.186880-05:00",
+  "fetched_at": "2026-11-13T07:11:15.219501-05:00",
   "source": "Fayette County GA Public Records",
   "date_range": {
-    "start": "2026-11-09",
-    "end": "2026-11-12"
+    "start": "2026-11-10",
+    "end": "2026-11-13"
   },
   "run_window": {
-    "start": "2026-11-09",
-    "end": "2026-11-12"
+    "start": "2026-11-10",
+    "end": "2026-11-13"
   },
   "archive_range": {
     "start": "2026-10-02",
-    "end": "2026-11-02"
+    "end": "2026-11-13"
   },
   "filed_range": {
     "start": "2026-09-30",
-    "end": "2026-10-29"
+    "end": "2026-11-12"
   },
-  "new_this_run": 0,
-  "archive_total": 20,
+  "new_this_run": 4,
+  "archive_total": 24,
   "dashboard_days": 120,
-  "total": 20,
-  "with_address": 9,
+  "total": 24,
+  "with_address": 10,
   "sources_report": {
     "parcels": {
       "ok": false,
@@ -42,16 +42,10 @@
       "error": ""
     },
     "legal_notices": {
-      "ok": false,
-      "status": "failed",
-      "count": 0,
-      "error": "ran but found no records"
-    },
-    "legal_organ_pdfs": {
-      "ok": false,
-      "status": "skipped",
-      "count": 0,
-      "error": "not configured"
+      "ok": true,
+      "status": "ok",
+      "count": 6,
+      "error": ""
     },
     "tax_sales": {
       "ok": true,
@@ -67,6 +61,89 @@
     }
   },
   "records": [
+    {
+      "doc_num": "GPN-5dfb9ef7421d9030",
+      "doc_type": "Notice of Sale Under Power",
+      "filed": "2026-11-12",
+      "cat": "FC",
+      "cat_label": "Pre-Foreclosure",
+      "owner": "Jean Burton Roland",
+      "parcel_owner": "",
+      "name_order": "natural",
+      "grantee": "",
+      "amount": null,
+      "legal": "Pickens County Progress Thursday, November 12, 2026 City: Jasper County: Pickens NOTICE OF SALE UNDER POWER, PICKENS COUNTY WHEREAS, on May 16, 2011, a certain Security Deed was executed by Jean Burton Roland as grantor in favor of Mortgage Electronic Registration Systems, Inc. as nominee for Allied Home Mortgage Corp. as grantee and was recorded on May 24, 2011, in Deed Book 92 ... click 'view' to open the full text.",
+      "parcel_id": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "GA",
+      "prop_zip": "",
+      "pub_city": "Jasper",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "owner_occupied": null,
+      "clerk_url": "https://www.georgiapublicnotice.com/search.aspx",
+      "source": "Georgia Public Notice (legal organ advertisement)",
+      "foreclosure_sale_date": "",
+      "tax_sale_date": "",
+      "years_delinquent": "",
+      "heirs_unknown": false,
+      "notice_number": "5dfb9ef7421d9030",
+      "status": "active",
+      "match_confidence": 0.0,
+      "match_method": "none",
+      "last_verified": "2026-11-13",
+      "flags": [
+        "Pre-foreclosure",
+        "New this week"
+      ],
+      "score": 65,
+      "county": "Fayette",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "doc_num": "GPN-FB4741",
+      "doc_type": "Notice of Sale Under Power",
+      "filed": "2026-10-28",
+      "cat": "FC",
+      "cat_label": "Pre-Foreclosure",
+      "owner": "J. E. St",
+      "parcel_owner": "",
+      "name_order": "natural",
+      "grantee": "",
+      "amount": null,
+      "legal": "South Fulton Neighbor Wednesday, October 28, 2026 City: Atlanta County: Fulton FB4741 gpn11 FN4741 gpn11 Prepared By/Return To: Summer Parker Halliday, Watkins & Mann, PC 244 Inverness Center Drive Suite 200 Birmingham, AL 35242 Parcel ID: 09F190000920334 NOTICE OF DEFAULT AND FORECLOSURE SALE WHEREAS, on February 3, 2009, a certain Security Deed was executed by J. E. St ... click 'view' to open the full text.",
+      "parcel_id": "",
+      "prop_address": "244 INVERNESS CENTER DRIVE",
+      "prop_city": "",
+      "prop_state": "GA",
+      "prop_zip": "35242",
+      "pub_city": "Atlanta",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "owner_occupied": null,
+      "clerk_url": "https://www.georgiapublicnotice.com/search.aspx",
+      "source": "Georgia Public Notice (legal organ advertisement)",
+      "foreclosure_sale_date": "",
+      "tax_sale_date": "",
+      "years_delinquent": "",
+      "heirs_unknown": false,
+      "notice_number": "FB4741",
+      "status": "active",
+      "match_confidence": 0.0,
+      "match_method": "none",
+      "last_verified": "2026-11-13",
+      "flags": [
+        "Pre-foreclosure"
+      ],
+      "score": 65,
+      "county": "Fayette",
+      "first_seen": "2026-11-13"
+    },
     {
       "doc_num": "GPN-811716ad05d427c1",
       "doc_type": "Notice of Sale Under Power",
@@ -108,6 +185,88 @@
       "score": 65,
       "county": "Fayette",
       "first_seen": "2026-10-02"
+    },
+    {
+      "doc_num": "GPN-c9c0a0c7b17cf49c",
+      "doc_type": "Notice of Sale Under Power",
+      "filed": "2026-11-04",
+      "cat": "FC",
+      "cat_label": "Pre-Foreclosure",
+      "owner": "Joseph Harvey Sr and Claudia Harvey",
+      "parcel_owner": "",
+      "name_order": "natural",
+      "grantee": "",
+      "amount": null,
+      "legal": "Columbus Ledger-Enquirer Wednesday, November 11, 2026 City: Columbus County: Muscogee NOTICE OF DEFAULT AND FORECLOSURE SALE WHEREAS, on June 10, 2010, a certain Security Deed was executed by Joseph Harvey Sr and Claudia Harvey, husband and wife as joint tenants with the right of survivorship as grantor(s) in favor of Mortgage Electronic Registration Systems, Inc., as Mortgagee, as n ... click 'view' to open the full text.",
+      "parcel_id": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "GA",
+      "prop_zip": "",
+      "pub_city": "Columbus",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "owner_occupied": null,
+      "clerk_url": "https://www.georgiapublicnotice.com/search.aspx",
+      "source": "Georgia Public Notice (legal organ advertisement)",
+      "foreclosure_sale_date": "",
+      "tax_sale_date": "",
+      "years_delinquent": "",
+      "heirs_unknown": false,
+      "notice_number": "c9c0a0c7b17cf49c",
+      "status": "active",
+      "match_confidence": 0.0,
+      "match_method": "none",
+      "last_verified": "2026-11-13",
+      "flags": [
+        "Pre-foreclosure"
+      ],
+      "score": 60,
+      "county": "Fayette",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "doc_num": "GPN-FN5360",
+      "doc_type": "Notice of Sale Under Power",
+      "filed": "2026-11-04",
+      "cat": "FC",
+      "cat_label": "Pre-Foreclosure",
+      "owner": "Frank C Cummings and Martha C",
+      "parcel_owner": "",
+      "name_order": "natural",
+      "grantee": "",
+      "amount": null,
+      "legal": "South Fulton Neighbor Wednesday, November 11, 2026 City: Atlanta County: Fulton FN5360 GPN14 FN5360 GPN14 NOTICE OF DEFAULT AND FORECLOSURE SALE WHEREAS, on August 2, 2010, a certain Security Deed was executed by Frank C Cummings and Martha C Cummings, husband and wife, as grantor(s) in favor of Wells Fargo Bank, N.A. as grantee, and was recorded on August 18, 2010, in Deed Boo ... click 'view' to open the full text.",
+      "parcel_id": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "GA",
+      "prop_zip": "",
+      "pub_city": "Atlanta",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "owner_occupied": null,
+      "clerk_url": "https://www.georgiapublicnotice.com/search.aspx",
+      "source": "Georgia Public Notice (legal organ advertisement)",
+      "foreclosure_sale_date": "",
+      "tax_sale_date": "",
+      "years_delinquent": "",
+      "heirs_unknown": false,
+      "notice_number": "FN5360",
+      "status": "active",
+      "match_confidence": 0.0,
+      "match_method": "none",
+      "last_verified": "2026-11-13",
+      "flags": [
+        "Pre-foreclosure"
+      ],
+      "score": 60,
+      "county": "Fayette",
+      "first_seen": "2026-11-13"
     },
     {
       "doc_num": "GPN-26-100",
