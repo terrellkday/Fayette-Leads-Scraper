@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-11-13T07:11:15.219501-05:00",
+  "fetched_at": "2026-11-14T07:11:15.754773-05:00",
   "source": "Fayette County GA Public Records",
   "date_range": {
-    "start": "2026-11-10",
-    "end": "2026-11-13"
+    "start": "2026-11-11",
+    "end": "2026-11-14"
   },
   "run_window": {
-    "start": "2026-11-10",
-    "end": "2026-11-13"
+    "start": "2026-11-11",
+    "end": "2026-11-14"
   },
   "archive_range": {
     "start": "2026-10-02",
@@ -17,7 +17,7 @@
     "start": "2026-09-30",
     "end": "2026-11-12"
   },
-  "new_this_run": 4,
+  "new_this_run": 0,
   "archive_total": 24,
   "dashboard_days": 120,
   "total": 24,
@@ -42,10 +42,16 @@
       "error": ""
     },
     "legal_notices": {
-      "ok": true,
-      "status": "ok",
-      "count": 6,
-      "error": ""
+      "ok": false,
+      "status": "failed",
+      "count": 0,
+      "error": "ran but found no records"
+    },
+    "legal_organ_pdfs": {
+      "ok": false,
+      "status": "skipped",
+      "count": 0,
+      "error": "not configured"
     },
     "tax_sales": {
       "ok": true,
